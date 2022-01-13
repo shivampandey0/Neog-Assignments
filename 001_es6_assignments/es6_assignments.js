@@ -81,7 +81,7 @@ const Obj = {
 
 const a = 5;
 const b = 10;
-console.log(`Fifteen is ${a + b} and n0t ${2 * a + b}.`)
+console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`)
 
 
 // var arithmeticsObj = {
@@ -139,11 +139,38 @@ const { operation, members } = avengers
 // packIt(1, 2, 3, 5, 5)
 
 var packIt = function packIt() {
-    for (var i = arguments.length, args = new Array(i), _key = 0; _key < i; _key++) {
-        args[_key] = arguments[_key];
+    for (var i = arguments.length, args = new Array(i), key = 0; key < i; key++) {       
+        args[key] = arguments[key];
     }
     return console.log(args);
 };
 packIt(1, 2, 3, 5, 5)
 
 
+
+//Guess the output
+const hello = () => "Hello"
+const welcome = () => "Welcome"
+const [Hello = hello(), Welcome = welcome()] = ["Namaste"]
+console.log(Hello, Welcome)
+
+/*
+Output: Namaste Welcome
+-> at the time of assigning variables in line 3 Hello and Welcome both have default values
+but Hello takes Namaste and Welcome keeps the default becauase there was no value for it
+*/
+
+//Guess the output
+
+const obj = {
+    aloo: 1,
+    bhallo: 2
+}
+
+const { c: aloo = [2, 3, 4].push(5), aloo } = obj
+
+console.log(aloo)
+
+/*
+
+*/
