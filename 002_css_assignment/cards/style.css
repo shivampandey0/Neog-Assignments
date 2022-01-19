@@ -1,0 +1,92 @@
+/* outline for all the elements for development only */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    /* outline: 1px solid red; */
+}
+
+:root{
+    --var-color-primary: #6200ee
+}
+
+/* Reset */
+
+html,body{
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+h2,h3{
+    margin: 0;
+}
+
+
+/* card */
+
+.card{
+    background-color: white;
+    display: flex;
+    max-width: 350px;
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 0.2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
+}
+
+.img__bg{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 0.2rem;
+}
+
+.title{
+   font-size: 1.25rem;
+   font-weight: 500;
+   color: black;
+   line-height: 2rem;
+}
+
+.subtitle{
+   font-size: 1rem;
+   font-weight: 500;
+   line-height: 1.5rem;
+   color: rgb(170, 163, 163);
+}
+
+.info__primary{
+    padding: 1rem;    
+}
+
+.info__secondary{
+     padding: 0 1rem 1rem;
+
+}
+
+.card__actions{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.action__buttons{
+    display: flex;
+    padding: 0.5rem;
+}
+
+.btn{
+    border: none;
+    background-color: white;
+    color: var(--var-color-primary);
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.icon{
+    width: 24px;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+}
