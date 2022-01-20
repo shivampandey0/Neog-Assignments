@@ -1,0 +1,10 @@
+
+.chips__container--stacked{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.chip__stacked{
+    max-width: 200px;
+}
