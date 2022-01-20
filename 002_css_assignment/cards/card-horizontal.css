@@ -1,0 +1,24 @@
+/* Card 6 */
+
+.card__6{
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.img__bg-6{
+    order: 0;
+    width: 110px;
+}
+
+.info__primary-6{
+    order: 1;
+    width: 55%;
+}
+
+.info__secondary-6{
+    display: none;
+}
+.card__actions-6{
+    order: 10;
+    width: 100%;
+}

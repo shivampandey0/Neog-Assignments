@@ -1,0 +1,81 @@
+
+
+
+/* card 3 */
+
+.card__3{
+    background-color: white;
+    display: flex;
+    max-width: 22rem;
+    margin: 3rem 0;
+    flex-direction: column;
+    border-radius: 0.2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
+}
+
+.info__primary-3{
+    padding: 1rem;
+    order: 0;
+}
+
+.info__secondary-3{
+     padding: 1rem 1rem 0.5rem;
+     color: var(--var-text-color-secondary);
+     order: 2;
+}
+
+.img__bg-3{
+    max-width: 100%;
+    object-fit: cover;
+   order: 1;
+}
+
+.title-3{
+   font-size: 1.25rem;
+   font-weight: 500;
+   color: black;
+   line-height: 2rem;
+}
+
+.subtitle-3{
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5rem;
+   color: var(--var-text-color-secondary);
+}
+
+
+.card__actions-3{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    order: 3;
+}
+
+.action__buttons-3{
+    display: flex;
+    padding: 0.5rem;
+}
+.action__icons-3{
+    display: flex;
+    align-items: center;
+}
+
+.btn-3{
+    border: none;
+    background-color: white;
+    color: var(--var-color-primary);
+    font-weight: 700;
+    padding: 0 0.5rem;
+    height: 2.25rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.icon-3{
+    width: 1.5rem;
+    padding: 0.75rem;
+    text-align: center;
+    cursor: pointer;
+}
+
