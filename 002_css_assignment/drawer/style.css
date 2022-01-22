@@ -6,7 +6,14 @@
 } */
 
 :root{
-  
+   --var-color-primary: #3f51b5;
+    --var-color-accent: #ff4081;
+    --var-color-warn: #f44336;
+    --var-color-primary-dark: #25327a;
+    --var-text-color-secondary: rgba(0,0,0,0.54);
+    --var-text-color-border: rgba(0,0,0,0.2);
+    --var-chip-background: #e0e0e0;
+    --var-chip-background-dark: rgb(194, 194, 194);
 }
 
 /* Reset */
