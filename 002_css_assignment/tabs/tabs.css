@@ -38,6 +38,7 @@
     color: grey;
     font-size: 1rem;
     font-weight: 500;
+    text-overflow: ellipsis;
 }
 
 .tab__container--active{
