@@ -26,8 +26,9 @@ html,body{
     font-family: 'Roboto', sans-serif;
 }
 
-h2,h3,h4,p,input{
+h1,h2,h3,h4,p,input{
     margin: 0;
+    padding: 0;
 }
 
 button{
@@ -51,6 +52,10 @@ input[type='radio']{
     padding: 1rem;
     border-radius: 0.4rem;
     margin: 1rem;
+}
+
+.container__bg{
+    background-color: #f0f0f0;
 }
 
 .container__title{
@@ -79,6 +84,13 @@ input[type='radio']{
     align-items: center;
     flex-wrap: nowrap;
     gap: 1rem;
+}
+
+.flex__row--center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .flex__row--end{
