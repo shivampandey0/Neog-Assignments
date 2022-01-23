@@ -9,6 +9,7 @@
     --var-color-primary: #3f51b5;
     --var-color-accent: #ff4081;
     --var-color-warn: #f44336;
+    --var-material-black: #333;
     --var-color-primary-dark: #25327a;
     --var-text-color-secondary: rgba(0,0,0,0.54);
     --var-text-color-border: rgba(0,0,0,0.2);
@@ -22,11 +23,18 @@ html,body{
     margin: 1rem;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-h2,h3{
+h2,h3,p{
     margin: 0;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -45,19 +53,69 @@ h2,h3{
   color: var(--var-text-color-secondary);
 }
 
+.center__container{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.flex__row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex__column{
+    display: flex;    
+    flex-direction: column;
+}
+
+.flex__row--end{
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
 .label{
     position: relative;
     margin: 2rem 0;
 }
 
-.button__primary{
-    border: none;
-    background-color: var(--var-color-primary);
-    color: white;
-    border-radius: 4px;
-    padding: 0.5rem 1rem;
+
+.width-100{
+    width: 100%;
 }
 
+
+.button__primary{
+    background-color: var(--var-color-primary);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    
+}
+
+.button__flat{    
+    color: #bb86fc;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+}
+
+.button__close{
+    color: var(--var-chip-background);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+
+}
+
+.hide{
+    display: none;
+}
 
 /* Badge */
 
@@ -94,4 +152,30 @@ h2,h3{
 .badge__icon{
     right: -10px;
     top: -20px;
+}
+
+
+/* snackbar */
+
+.snackbar{
+    background-color: var(--var-material-black);
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: white;
+    position: fixed;    
+    min-width: 300px;
+}
+
+.snackbar p{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.fixed__bottom--left{
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.fixed__bottom--center{
+    bottom: 1rem;
 }

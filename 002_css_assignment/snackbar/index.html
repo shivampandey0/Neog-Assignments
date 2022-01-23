@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Snackbar</title>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <h3 class="container__title">Snackbar Demo</h3>
+            <div class="center__container">
+                <button class="button__primary">BASELINE</button>
+                <button class="button__primary">LEADING</button>
+                <button class="button__primary">STACKED</button>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="flex__row">
+        <!-- Snackbars -->
+
+        <!-- Baseline Snackbar -->
+        <div class="flex__row snackbar fixed__bottom--center hide">
+            <p>Can't send photo. Retry in 5 seconds.</p>
+            <button class="button__flat">RETRY</button>
+            <button class="button__close">X</button>
+        </div>
+
+        <!-- Leading Snackbar -->
+        <div class="flex__row snackbar fixed__bottom--left hide">
+            <p>Your photo has been archived.</p>
+            <button class="button__flat">Undo</button>
+            <button class="button__close">X</button>
+        </div>
+
+        <!-- Stacked Snackbar -->
+        <div class="flex__column snackbar fixed__bottom--center">
+            <p class="width-100">This item already has the label "travel". You can add a new label.</p>
+            <div class="flex__row flex__row--end">
+                <button class="button__flat">Add a new label</button>
+                <button class="button__close">X</button>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
