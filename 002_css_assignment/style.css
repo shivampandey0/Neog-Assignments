@@ -26,7 +26,7 @@ html,body{
     font-family: 'Roboto', sans-serif;
 }
 
-h2,h3,p{
+h2,h3,h4,p,input{
     margin: 0;
 }
 
@@ -36,6 +36,12 @@ button{
     color: white;
     cursor: pointer;
 }
+
+
+input[type='radio']{
+    cursor: pointer;
+}
+
 
 
 /* General */
@@ -67,15 +73,41 @@ button{
     justify-content: space-around;
 }
 
+.flex__row--start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.flex__row--end{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
 .flex__column{
     display: flex;    
     flex-direction: column;
 }
 
-.flex__row--end{
-    justify-content: flex-end;
-    flex-wrap: nowrap;
+.flex__column--end{
+    display: flex;    
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 }
+
+.flex__column--center{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
 
 .label{
     position: relative;
@@ -102,6 +134,12 @@ button{
     letter-spacing: 1px;
     padding: 0.5rem 1rem;
     text-transform: uppercase;
+    border-radius: 4px;
+    max-width: fit-content;
+}
+
+.button__flat:hover{
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .button__close{
@@ -116,6 +154,18 @@ button{
 .hide{
     display: none;
 }
+
+/* Cards */
+
+.card{
+    background-color: white;
+    display: flex;
+    max-width: 22rem;
+    margin: 3rem 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
+}
+
 
 /* Badge */
 
@@ -178,4 +228,84 @@ button{
 
 .fixed__bottom--center{
     bottom: 1rem;
+}
+
+
+/* Dialogs */
+
+.dialog__bg{
+    background-color: var(--var-chip-background-dark);
+}
+
+.dialog__container{
+    flex-direction: column;
+    min-width: 256px;
+}
+
+.dialog__title{
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.dialog__body{
+    padding: 0 1rem;
+    min-height: 3rem;
+    color: var(--var-text-color-secondary);
+}
+
+.dialog__options{
+    padding: 0 0.5rem 0.5rem;
+}
+
+.dialog__options--bordered{
+    max-height: 150px;
+    border-top: 1px solid var(--var-chip-background);
+    border-bottom: 1px solid var(--var-chip-background);
+    overflow-y: scroll;
+
+}
+
+.dialog__option{
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem 0;
+}
+
+.dialog__option--radio{
+     padding: 0.5rem 1rem;
+     margin:  0.3rem;
+}
+
+.dialog__option:hover{
+   background-color: #f0f0f0;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+.dialog__option i{
+    font-size: 2.5rem;
+    color: var(--var-chip-background-dark);
+}
+
+
+.dialog__option h4{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+
+.dialog__actions button{
+    color: var(--var-color-primary);
+    letter-spacing: normal;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    
+}
+
+/* Utility */
+
+.hide{
+    display: none;
 }

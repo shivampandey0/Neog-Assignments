@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dialogs</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="container flex__row center__container dialog__bg">
+
+            <!-- Alert - side by side -->
+            <div class="dialog__container card">
+                <h2 class="dialog__title">Dialog Header</h2>
+                <p class="dialog__body">Dialog body text</p>
+
+                <div class="dialog__actions flex__row--end">
+                    <button class="button__flat">
+                        Action 1
+                    </button>
+                    <button class="button__flat">
+                        Action 2
+                    </button>
+                </div>
+            </div>
+
+            <!-- Alert - stacked -->
+            <div class="dialog__container card">
+                <h2 class="dialog__title">Dialog Header</h2>
+                <p class="dialog__body">Dialog body text</p>
+
+                <div class="dialog__actions flex__column--end">
+                    <button class="button__flat">
+                        Action 1
+                    </button>
+                    <button class="button__flat">
+                        Action 2
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dialog - Simple -->
+            <div class="dialog__container card">
+                <h2 class="dialog__title">Dialog Header</h2>
+
+                <div class="dialog__options flex__column">
+
+                    <div class="dialog__option flex__row--start">
+                        <i class="fas fa-user-circle dialog__avtar"></i>
+                        <h4>Item 1</h4>
+                    </div>
+                    <div class="dialog__option flex__row--start">
+                        <i class="fas fa-user-circle dialog__avtar"></i>
+                        <h4>Item 2</h4>
+                    </div>
+                    <div class="dialog__option flex__row--start">
+                        <i class="fas fa-user-circle dialog__avtar"></i>
+                        <h4>Item 3</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Confirmation dialog -->
+
+            <div class="dialog__container card">
+                <h2 class="dialog__title">Dialog Header</h2>
+
+                <div class="dialog__options--bordered flex__column">
+
+                    <div class="dialog__option--radio flex__row--start">
+                        <input type="radio" name="item" id="item-1" value="item-1">
+                        <label for="item-1">Item 1</label>
+                    </div>
+                    <div class="dialog__option--radio flex__row--start">
+                        <input type="radio" name="item" id="item-2" value="item-2">
+                        <label for="item-2">Item 2</label>
+                    </div>
+                    <div class="dialog__option--radio flex__row--start">
+                        <input type="radio" name="item" id="item-3" value="item-3">
+                        <label for="item-3">Item 3</label>
+                    </div>
+                    <div class="dialog__option--radio flex__row--start">
+                        <input type="radio" name="item" id="item-4" value="item-4">
+                        <label for="item-4">Item 4</label>
+                    </div>
+                    <div class="dialog__option--radio flex__row--start">
+                        <input type="radio" name="item" id="item-5" value="item-5">
+                        <label for="item-5">Item 5</label>
+                    </div>
+
+                </div>
+
+                <div class="dialog__actions flex__row--end">
+                    <button class="button__flat">
+                        Action 1
+                    </button>
+                    <button class="button__flat">
+                        Action 2
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+</body>
+
+</html>
