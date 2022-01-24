@@ -1,6 +1,16 @@
-/* outline for all the elements for development only */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+@import url('./components/styles/badges.css');
+@import url('./components/styles/cards.css');
+@import url('./components/styles/chips.css');
+@import url('./components/styles/dialogs.css');
+@import url('./components/styles/drawer.css');
+@import url('./components/styles/header.css');
+@import url('./components/styles/snackbar.css');
+@import url('./components/styles/tabs.css');
+
+/* outline for all the elements -> development use only */
 /* *{
     outline: 1px solid red;
 } */
@@ -50,8 +60,6 @@ a{
 input[type='radio']{
     cursor: pointer;
 }
-
-
 
 /* General */
 
@@ -127,11 +135,9 @@ input[type='radio']{
 
 }
 
-
-
 .label{
     position: relative;
-    margin: 2rem 0;
+    margin: 1rem;
 }
 
 

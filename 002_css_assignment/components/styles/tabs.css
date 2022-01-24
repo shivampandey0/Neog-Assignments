@@ -1,9 +1,4 @@
 
-.container{
-    display: flex;
-    justify-content: center;
-}
-
 .tabs__container{   
     max-width: fit-content;
 }

@@ -1,14 +1,10 @@
-@import url('../style.css');
 
 
-/* Top */
-
-
-.container{
+/* .container{
     height: 100vh;
     display: grid;
     grid-template-columns: minmax(15rem, 15%) 1fr;
-}
+} */
 
 .drawer__container{
     height: 100%;
