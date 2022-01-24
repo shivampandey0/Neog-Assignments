@@ -1,24 +1,6 @@
+@import url('../style.css');
 
-:root{
-    --var-color-primary: #6200ee;
-    --var-color-primary-shadow: #7f32eb;
-    --var-text-color-border: rgba(0,0,0,0.2);
 
-}
-
-/* Reset */
-
-html,body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-}
-
-h1,h2,h3{
-    margin: 0;
-    padding: 0;
-}
 
 /* General */
 
@@ -67,7 +49,6 @@ header{
 
 .header__action:hover{
     background-color: var(--var-color-primary-shadow);
-
 }
 
 

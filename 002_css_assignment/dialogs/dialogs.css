@@ -1,0 +1,74 @@
+@import url('../style.css');
+
+/* Dialogs */
+
+.dialog__bg{
+    background-color: var(--var-chip-background-dark);
+}
+
+.dialog__container{
+    flex-direction: column;
+    min-width: 256px;
+}
+
+.dialog__title{
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.dialog__body{
+    padding: 0 1rem;
+    min-height: 3rem;
+    color: var(--var-text-color-secondary);
+}
+
+.dialog__options{
+    padding: 0 0.5rem 0.5rem;
+}
+
+.dialog__options--bordered{
+    max-height: 150px;
+    border-top: 1px solid var(--var-chip-background);
+    border-bottom: 1px solid var(--var-chip-background);
+    overflow-y: scroll;
+
+}
+
+.dialog__option{
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem 0;
+}
+
+.dialog__option--radio{
+     padding: 0.5rem 1rem;
+     margin:  0.3rem;
+}
+
+.dialog__option:hover{
+   background-color: #f0f0f0;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+.dialog__option i{
+    font-size: 2.5rem;
+    color: var(--var-chip-background-dark);
+}
+
+
+.dialog__option h4{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+
+.dialog__actions button{
+    color: var(--var-color-primary);
+    letter-spacing: normal;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    
+}

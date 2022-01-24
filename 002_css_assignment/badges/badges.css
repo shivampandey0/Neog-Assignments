@@ -1,0 +1,39 @@
+@import url('../style.css');
+
+
+/* Badge */
+
+.badge{
+    background-color: var(--var-color-primary);
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 50%;
+}
+
+.badge__right{
+    position: absolute;
+    top: -10px;
+}
+
+.badge__left{
+    position: absolute;
+    top: -15px;
+    left: -10px;
+}
+
+.badge__large{
+    font-size: 1.2rem;
+    font-weight: 700;
+    top: -20px;
+}
+
+.badge__red{
+    background-color: var(--var-color-warn);
+}
+
+.badge__icon{
+    right: -10px;
+    top: -20px;
+}

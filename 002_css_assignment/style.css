@@ -20,15 +20,19 @@
 /* Reset */
 
 html,body{
-    margin: 1rem;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-h1,h2,h3,h4,p,input{
+h1,h2,h3,h4,p,input,a{
     margin: 0;
     padding: 0;
+}
+
+ul{
+    list-style-type: none;
 }
 
 button{
@@ -36,6 +40,10 @@ button{
     background-color: transparent;
     color: white;
     cursor: pointer;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -163,9 +171,6 @@ input[type='radio']{
 
 }
 
-.hide{
-    display: none;
-}
 
 /* Cards */
 
@@ -176,144 +181,6 @@ input[type='radio']{
     margin: 3rem 0;
     border-radius: 0.25rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
-}
-
-
-/* Badge */
-
-.badge{
-    background-color: var(--var-color-primary);
-    color: white;
-    padding: 4px 8px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    border-radius: 50%;
-}
-
-.badge__right{
-    position: absolute;
-    top: -10px;
-}
-
-.badge__left{
-    position: absolute;
-    top: -15px;
-    left: -10px;
-}
-
-.badge__large{
-    font-size: 1.2rem;
-    font-weight: 700;
-    top: -20px;
-}
-
-.badge__red{
-    background-color: var(--var-color-warn);
-}
-
-.badge__icon{
-    right: -10px;
-    top: -20px;
-}
-
-
-/* snackbar */
-
-.snackbar{
-    background-color: var(--var-material-black);
-    padding: 0.5rem;
-    border-radius: 4px;
-    color: white;
-    position: fixed;    
-    min-width: 300px;
-}
-
-.snackbar p{
-    padding: 0.5rem;
-    font-size: 0.8rem;
-}
-
-.fixed__bottom--left{
-    left: 1rem;
-    bottom: 1rem;
-}
-
-.fixed__bottom--center{
-    bottom: 1rem;
-}
-
-
-/* Dialogs */
-
-.dialog__bg{
-    background-color: var(--var-chip-background-dark);
-}
-
-.dialog__container{
-    flex-direction: column;
-    min-width: 256px;
-}
-
-.dialog__title{
-    padding: 1rem;
-    font-weight: 500;
-    font-size: 1.4rem;
-}
-
-.dialog__body{
-    padding: 0 1rem;
-    min-height: 3rem;
-    color: var(--var-text-color-secondary);
-}
-
-.dialog__options{
-    padding: 0 0.5rem 0.5rem;
-}
-
-.dialog__options--bordered{
-    max-height: 150px;
-    border-top: 1px solid var(--var-chip-background);
-    border-bottom: 1px solid var(--var-chip-background);
-    overflow-y: scroll;
-
-}
-
-.dialog__option{
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem 0;
-}
-
-.dialog__option--radio{
-     padding: 0.5rem 1rem;
-     margin:  0.3rem;
-}
-
-.dialog__option:hover{
-   background-color: #f0f0f0;
-   border-radius: 8px;
-   cursor: pointer;
-}
-
-.dialog__option i{
-    font-size: 2.5rem;
-    color: var(--var-chip-background-dark);
-}
-
-
-.dialog__option h4{
-    font-size: 1rem;
-    font-weight: 400;
-    color: #333;
-}
-
-
-.dialog__actions button{
-    color: var(--var-color-primary);
-    letter-spacing: normal;
-    font-weight: 600;
-    font-size: 0.8rem;
-    margin: 0.5rem 0;
-    
 }
 
 /* Utility */

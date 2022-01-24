@@ -1,0 +1,291 @@
+@import url('../style.css');
+
+/* card basics */
+
+.card__1{
+    background-color: white;
+    display: flex;
+    max-width: 22rem;
+    flex-direction: column;
+    margin: 3rem 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
+}
+
+.img__bg{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 0.2rem;
+}
+
+.title{
+   font-size: 1.25rem;
+   font-weight: 500;
+   color: black;
+   line-height: 2rem;
+}
+
+.subtitle{
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5rem;
+   color: var(--var-text-color-secondary);
+}
+
+.info__primary{
+    padding: 1rem;    
+}
+
+.info__secondary{
+     padding: 0 1rem 1rem;
+     color: var(--var-text-color-secondary);
+}
+
+.card__actions{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.action__buttons{
+    display: flex;
+    padding: 0.5rem;
+}
+
+.action__icons{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    border: none;
+    background-color: white;
+    color: var(--var-color-primary);
+    height: 2.25rem;
+    width: 100%;
+    padding: 0 0.5rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.icon{
+    width: 1.5rem;
+    padding: 0.75rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+
+/* card header */
+
+.card__3{
+    background-color: white;
+    display: flex;
+    max-width: 22rem;
+    margin: 3rem 0;
+    flex-direction: column;
+    border-radius: 0.2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
+}
+
+.info__primary-3{
+    padding: 1rem;
+    order: 0;
+}
+
+.info__secondary-3{
+     padding: 1rem 1rem 0.5rem;
+     color: var(--var-text-color-secondary);
+     order: 2;
+}
+
+.img__bg-3{
+    max-width: 100%;
+    object-fit: cover;
+   order: 1;
+}
+
+.title-3{
+   font-size: 1.25rem;
+   font-weight: 500;
+   color: black;
+   line-height: 2rem;
+}
+
+.subtitle-3{
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5rem;
+   color: var(--var-text-color-secondary);
+}
+
+
+.card__actions-3{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    order: 3;
+}
+
+.action__buttons-3{
+    display: flex;
+    padding: 0.5rem;
+}
+.action__icons-3{
+    display: flex;
+    align-items: center;
+}
+
+.btn-3{
+    border: none;
+    background-color: white;
+    color: var(--var-color-primary);
+    font-weight: 700;
+    padding: 0 0.5rem;
+    height: 2.25rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.icon-3{
+    width: 1.5rem;
+    padding: 0.75rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* Card horizontal */
+
+.card__6{
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.img__bg-6{
+    order: 0;
+    width: 35%;
+}
+
+.info__primary-6{
+    order: 1;
+    width: 55%;
+}
+
+.info__secondary-6{
+    display: none;
+}
+.card__actions-6{
+    order: 10;
+    width: 100%;
+}
+
+
+/* card - only btns */
+
+.action__icons-4{
+    display: none;
+}
+
+
+
+
+/* card only icons */
+
+.card__actions-5{
+    display: flex;
+    justify-content: end;
+}
+
+.action__buttons-5{
+    display: none;
+}
+
+
+
+/* card text over media */
+
+.card__2{
+    background-color: white;
+    display: flex;
+    max-width: 22rem;
+    position: relative;
+    margin: 3rem 0;
+    flex-direction: column;
+    border-radius: 0.2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
+}
+
+/* .info__container-1{
+    position: absolute;
+    top: 50%;
+} */
+
+.info__primary-2{
+    position: absolute;
+    padding: 1rem;  
+    top: 9rem;  
+}
+
+.info__secondary-2{
+     padding: 1rem 1rem 0.5rem;
+     color: var(--var-text-color-secondary);
+}
+
+.img__bg{
+    max-width: 100%;
+    object-fit: cover;
+    /* border-radius: 0.2rem; */
+}
+
+.title-2{
+   font-size: 1.25rem;
+   font-weight: 500;
+   color: white;
+   line-height: 2rem;
+}
+
+.subtitle-2{
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5rem;
+   color: white;
+}
+
+
+.card__actions-2{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.action__buttons-2{
+    display: flex;
+    padding: 0.5rem;
+}
+.action__icons-2{
+    display: flex;
+    align-items: center;
+}
+
+.btn-2{
+    border: none;
+    background-color: white;
+    color: var(--var-color-primary);
+    font-weight: 700;
+    padding: 0 0.5rem;
+    height: 2.25rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.icon-2{
+    width: 1.5rem;
+    padding: 0.75rem;
+    text-align: center;
+    cursor: pointer;
+}

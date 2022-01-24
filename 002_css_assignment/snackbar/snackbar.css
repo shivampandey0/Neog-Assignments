@@ -1,0 +1,25 @@
+
+/* snackbar */
+
+.snackbar{
+    background-color: var(--var-material-black);
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: white;
+    position: fixed;    
+    min-width: 300px;
+}
+
+.snackbar p{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.fixed__bottom--left{
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.fixed__bottom--center{
+    bottom: 1rem;
+}
