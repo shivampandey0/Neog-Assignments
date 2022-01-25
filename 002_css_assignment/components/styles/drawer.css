@@ -1,24 +1,38 @@
 
 .drawer__container{
-    height: 100%;
-    display: grid;
-    grid-template-columns: minmax(15rem, 15%) 1fr;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    /* display: grid;
+    grid-template-columns: minmax(15rem, 15%) 1fr; */
 }
 
-.sidebar{
-    border-right: 2px solid grey;
+.drawer{
+    border-right: 1px solid grey;
+    background-color: white;
+    width: 256px;
+    z-index: 6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 
 .drawer__header{
-    position: sticky;
     padding: 1rem;
-    top: 0;
     background-color: white;
 }
 
-nav.drawer__list{
+.drawer__nav{
     overflow-y: auto;    
+    height: 100%;
+}
+
+.drawer__list{
+   margin: 0;
+   padding: 0.5rem 0;
 }
 
 
@@ -26,13 +40,14 @@ nav.drawer__list{
     font-size: 0.875rem;
     font-weight: 400;
     color: grey;
+    padding: 0 0.5rem 0;
 }
 
 .nav__list-item{
  display: flex;
- height: 3rem;
+ height: 2.5rem;
  gap: 2rem;
- padding: 0 0.5rem 0;
+ padding: 0 0.5rem;
  align-items: center;
  margin: 0.5rem;
 }
@@ -43,14 +58,24 @@ nav.drawer__list{
 }
 
 
+.content__section{
+    overflow: auto;
+}
+
 .content__header{
     padding: 1.5rem 1rem;
     background-color: var(--var-color-primary);
     color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 4;
 }
 
 .content__section p{
     line-height: 1.5rem;
     word-spacing: 4px;
-    padding: 1rem;
+    padding: 0 1rem;
+    
+    
 }

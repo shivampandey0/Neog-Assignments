@@ -1,5 +1,14 @@
 
 
+.list__divider{
+    margin: 3px 0 4px;
+    border: none;
+    border-bottom: 1px solid var(--var-text-color-border);
+}
+
+.empty__height{
+    height: 6rem;
+}
 /* Positions */
 
 .position-relative{
@@ -25,6 +34,14 @@
     align-items: center;
     justify-content: space-around;
 }
+
+.flex__row--nowrap{
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* align-items: center;
+    justify-content: space-around; */
+}
+
 
 .flex__row--start{
     display: flex;
