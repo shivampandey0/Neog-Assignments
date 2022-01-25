@@ -1,39 +1,30 @@
 
-
-/* .container{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: minmax(15rem, 15%) 1fr;
-} */
-
 .drawer__container{
     height: 100%;
+    display: grid;
+    grid-template-columns: minmax(15rem, 15%) 1fr;
+}
+
+.sidebar{
     border-right: 2px solid grey;
-   
-}
-
-.drawer__nav{
-    overflow-y: auto;   
-    height: 100%;
 }
 
 
-.drawer__header, .content__header{
+.drawer__header{
     position: sticky;
     padding: 1rem;
     top: 0;
     background-color: white;
 }
 
-.content__header{
-    background-color: purple;
-    color: white;
+nav.drawer__list{
+    overflow-y: auto;    
 }
 
-.drawer__subheader{
+
+.drawer__label{
     font-size: 0.875rem;
     font-weight: 400;
-    padding: 1rem;
     color: grey;
 }
 
@@ -49,4 +40,17 @@
 .nav__list-item:hover{
     background-color: rgb(185, 185, 185);
     border-radius: 0.5rem;
+}
+
+
+.content__header{
+    padding: 1.5rem 1rem;
+    background-color: var(--var-color-primary);
+    color: white;
+}
+
+.content__section p{
+    line-height: 1.5rem;
+    word-spacing: 4px;
+    padding: 1rem;
 }

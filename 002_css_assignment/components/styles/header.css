@@ -11,7 +11,7 @@ p{
 } */
 
 
-header{
+.header{
     background-color: var(--var-color-primary);
     color: white;
     height: 3rem;

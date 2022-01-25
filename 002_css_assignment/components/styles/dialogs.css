@@ -30,8 +30,7 @@
     max-height: 150px;
     border-top: 1px solid var(--var-chip-background);
     border-bottom: 1px solid var(--var-chip-background);
-    overflow-y: scroll;
-
+    overflow-y: auto;
 }
 
 .dialog__option{
@@ -68,6 +67,6 @@
     letter-spacing: normal;
     font-weight: 600;
     font-size: 0.8rem;
-    margin: 0.5rem 0;
-    
+    margin: 0.5rem;
+    padding: 0.5rem;
 }

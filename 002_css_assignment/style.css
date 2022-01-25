@@ -9,6 +9,8 @@
 @import url('./components/styles/header.css');
 @import url('./components/styles/snackbar.css');
 @import url('./components/styles/tabs.css');
+@import url('./components/styles/typography.css');
+@import url('./components/styles/utilities.css');
 
 /* outline for all the elements -> development use only */
 /* *{
@@ -16,13 +18,14 @@
 } */
 
 :root{
-    --var-color-primary: #3f51b5;
+    --var-color-primary: #3F51B5;
+    --var-color-primary-dark: #303F9F;
     --var-color-accent: #ff4081;
     --var-color-warn: #f44336;
     --var-material-black: #333;
-    --var-color-primary-dark: #25327a;
+    --var-text-color-primary: rgba(0,0,0,0.9);
     --var-text-color-secondary: rgba(0,0,0,0.54);
-    --var-text-color-border: rgba(0,0,0,0.2);
+    --var-text-color-border: #BDBDBD;
     --var-chip-background: #e0e0e0;
     --var-chip-background-dark: rgb(194, 194, 194);
 }
@@ -36,13 +39,14 @@ html,body{
     font-family: 'Roboto', sans-serif;
 }
 
-h1,h2,h3,h4,p,input,a{
+h1,h2,h3,h4,h5,h6,p,input,a{
     margin: 0;
     padding: 0;
 }
 
 ul{
     list-style-type: none;
+    padding-bottom: 1rem;
 }
 
 button{
@@ -50,6 +54,7 @@ button{
     background-color: transparent;
     color: white;
     cursor: pointer;
+    padding: 0;
 }
 
 a{
@@ -87,62 +92,10 @@ input[type='radio']{
     gap: 2rem;
 }
 
-.flex__row{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.flex__row--start{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 1rem;
-}
-
-.flex__row--center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.flex__row--end{
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-}
-
-.flex__column{
-    display: flex;    
-    flex-direction: column;
-}
-
-.flex__column--end{
-    display: flex;    
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.flex__column--center{
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
 .label{
     position: relative;
     margin: 1rem;
-}
-
-
-.width-100{
-    width: 100%;
+    max-width: fit-content;
 }
 
 
@@ -154,11 +107,7 @@ input[type='radio']{
 }
 
 .button__flat{    
-    color: #bb86fc;
-    font-weight: 400;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    padding: 0.5rem 1rem;
+    color: var(--var-color-primary);
     text-transform: uppercase;
     border-radius: 4px;
     max-width: fit-content;
@@ -177,19 +126,6 @@ input[type='radio']{
 
 }
 
-
-/* Cards */
-
-.card{
-    background-color: white;
-    display: flex;
-    max-width: 22rem;
-    margin: 3rem 0;
-    border-radius: 0.25rem;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
-}
-
-/* Utility */
 
 .hide{
     display: none;
