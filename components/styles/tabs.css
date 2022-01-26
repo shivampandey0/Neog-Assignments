@@ -11,6 +11,7 @@
     flex-wrap: nowrap;
     padding: 1rem 2rem;
     cursor: pointer;
+    color: grey;
 }
 
 .tab__container--column{
@@ -32,7 +33,7 @@
 .tab__title{
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: grey;
+    /* color: grey; */
     font-size: 1rem;
     font-weight: 500;
     text-overflow: ellipsis;
@@ -40,11 +41,11 @@
 
 .tab__container--active{
     border-bottom: 3px solid var(--var-color-primary);
+    color: var(--var-color-primary);
+
 }
 
-.tab__title--active{
-    color: var(--var-color-primary);
-}
+
 
 
 @media screen and (max-width:600px) {
