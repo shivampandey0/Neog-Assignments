@@ -15,9 +15,9 @@
         <section class="container">
             <h3 class="container__title">Snackbar Demo</h3>
             <div class="center__container">
-                <button class="button__primary">BASELINE</button>
-                <button class="button__primary">LEADING</button>
-                <button class="button__primary">STACKED</button>
+                <button id="baseline_btn" class="button__primary">BASELINE</button>
+                <button id="leading_btn"  class="button__primary">LEADING</button>
+                <button id="stacked_btn"  class="button__primary">STACKED</button>
             </div>
         </section>
 
@@ -28,21 +28,21 @@
         <!-- Snackbars -->
 
         <!-- Baseline Snackbar -->
-        <div class="flex__row snackbar fixed__bottom--center hide">
+        <div id="baseline_snackbar" class="flex__row snackbar fixed__bottom--center hide">
             <p>Can't send photo. Retry in 5 seconds.</p>
             <button class="button__flat">RETRY</button>
             <button class="button__close">X</button>
         </div>
 
         <!-- Leading Snackbar -->
-        <div class="flex__row snackbar fixed__bottom--left hide">
+        <div id="leading_snackbar" class="flex__row snackbar fixed__bottom--left hide">
             <p>Your photo has been archived.</p>
             <button class="button__flat">Undo</button>
             <button class="button__close">X</button>
         </div>
 
         <!-- Stacked Snackbar -->
-        <div class="flex__column snackbar fixed__bottom--center">
+        <div id="stacked_snackbar" class="flex__column snackbar fixed__bottom--center hide">
             <p class="width-100">This item already has the label "travel". You can add a new label.</p>
             <div class="flex__row flex__row--end">
                 <button class="button__flat">Add a new label</button>
@@ -52,6 +52,8 @@
 
 
     </footer>
+
+    <script src="../scripts/snackbar.js"></script>
 </body>
 
 </html>
