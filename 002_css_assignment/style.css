@@ -20,6 +20,7 @@
 :root{
     --var-color-primary: #3F51B5;
     --var-color-primary-dark: #303F9F;
+    --var-color-primary-hover: #6070db;
     --var-color-accent: #ff4081;
     --var-color-warn: #f44336;
     --var-material-black: #333;

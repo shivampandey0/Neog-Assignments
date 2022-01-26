@@ -60,6 +60,7 @@
 
 .content__section{
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .content__header{
@@ -76,6 +77,5 @@
     line-height: 1.5rem;
     word-spacing: 4px;
     padding: 0 1rem;
-    
-    
+
 }

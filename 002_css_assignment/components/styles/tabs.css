@@ -21,6 +21,10 @@
     font-size: 1.2rem;
 }
 
+.tab__container h3{
+    white-space: nowrap;
+}
+
 .tab__container:hover{
     background-color: var(--var-chip-background);
 }
@@ -40,4 +44,15 @@
 
 .tab__title--active{
     color: var(--var-color-primary);
+}
+
+
+@media screen and (max-width:600px) {
+    .tab__title{
+        font-size: 0.8rem;
+    }
+
+    .tab__container{
+        padding: 0.5rem 1rem;
+    }
 }
