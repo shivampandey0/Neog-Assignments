@@ -128,4 +128,161 @@ Ans. https://codesandbox.io/s/async-js-ex-7-2-d4neh
 */
 
 
+/*
+live ex11: print data on success#
+challenge#
+use the fakeFetch() to get data and show on success.
+*/
 
+
+function fakeFetch(msg, shouldReject) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldReject) {
+        reject(`error from server: ${msg}`)
+      }
+      resolve(`from server: ${msg}`)
+    }, 3000)
+  })
+}
+
+fakeFetch('Hello')
+.then(data=> console.log('Success',data))
+.catch(err => console.log('Error',err));
+
+/*
+live ex12: print data on success, print error on failure#
+challenge#
+Call fakeFetch(msg, true) to get a rejected promise. Handle the error with the error handler. Show a message using console.error for errors.
+*/
+
+fakeFetch('Hello again!',true)
+.then(data=> console.log('Success',data))
+.catch(err => console.error('Error',err));
+
+
+/*
+live ex13: chaining#
+challenge#
+Create a function getServerResponseLength(msg) This function will use fakeFetch() internally with the message and return the length of the response received by the server.
+
+Note: Instead of returning the response from the server this should return the length.
+
+Hint: It will return in a promise.
+*/
+
+
+function fakeFetch(msg, shouldReject) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldReject) {
+        reject(`error from server: ${msg}`)
+      }
+      resolve(`from server: ${msg}`)
+    }, 300)
+  })
+}
+
+const getServerResponseLength = msg => fakeFetch(msg).then((res) => res.length);
+
+/*
+live ex14: waterfall data#
+challenge#
+Write a function syncCallsToServer(msg1, msg2) which will take two messages and call fakeFetch() with the second message only when the first message has returned from the server.
+*/
+
+function fakeFetch(msg, shouldReject) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldReject) {
+        reject(`error from server: ${msg}`)
+      }
+      resolve(`from server: ${msg}`)
+    }, 300)
+  })
+}
+
+const syncCallsToServer = (msg1,msg2) => {
+    fakeFetch(msg1).then(data1 => fakeFetch(msg2).then(data2 => console.log({data1,data2})));
+}
+
+syncCallsToServer('aloo','bhaloo');
+
+/*
+live ex15: use async-await with fakeFetch#
+challenge#
+Given the syntax above. Call fakeFetch() with some msg and use await to get the data and then print it.
+*/
+
+function fakeFetch(msg, shouldReject) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldReject) {
+        reject(`error from server: ${msg}`)
+      }
+      resolve(`from server: ${msg}`)
+    }, 300)
+  })
+}
+
+const getData = async(msg) => {
+    const data = await fakeFetch(msg).then(res => res);
+    console.log(data);
+}
+
+getData('hello');
+
+
+/*
+Write a function syncCallsToServer(msg1, msg2) which will take two messages and call fakeFetch() with the second message only when the first message has returned from the server.
+USING async/await
+*/
+
+function fakeFetch(msg, shouldReject) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldReject) {
+        reject(`error from server: ${msg}`)
+      }
+      resolve(`from server: ${msg}`)
+    }, 300)
+  })
+}
+
+const syncCallsToServer = async(msg1,msg2) => {
+    const data1 = await fakeFetch(msg1).then(res => res);
+    const data2 = await fakeFetch(msg2).then(res => res);
+
+    console.log({data1,data2});
+}
+
+syncCallsToServer('Hello','Bye');
+
+
+// h/w important: parallel calls in async-await#
+// We did the synchronous fakeFetch() fall. How would you do two parallel calls without blocking each other?
+
+// How to catch different errors in async await? In promises as well.
+
+
+
+function fakeFetch(msg, shouldReject) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldReject) {
+        reject(`error from server: ${msg}`)
+      }
+      resolve(`from server: ${msg}`)
+    }, 300)
+  })
+}
+
+
+const syncCallsToServer = async(msg1,msg2) => {
+
+    const [data1,data2] = await Promise.all([fakeFetch(msg1),fakeFetch(msg2)]);
+    console.log({data1,data2});
+
+}
+
+syncCallsToServer('Hello','Bye')
