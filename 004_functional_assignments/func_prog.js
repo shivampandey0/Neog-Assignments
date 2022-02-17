@@ -212,3 +212,12 @@ console.log(arr.map(getObjArr));
 /***
  * Currying
  */
+
+/**
+ * Create a function which takes your name and returns a function which would add your name to anything that function says.
+ */
+
+const giveYourName = name => msg => `${name} Says, ${msg}`;
+
+console.log(giveYourName('Shivam')('Hellow'));
+
