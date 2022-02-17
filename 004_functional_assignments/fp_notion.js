@@ -332,11 +332,24 @@ console.log(arr.join("-"));
 ```jsx
 If your input is: 24345687
 
-Your output should be: 2-23456-87
+Your output should be: 2-43456-87
 ```
  */
 
 // Doubt
+
+const str = "24345687";
+
+const modify = (acc, curr, index, arr) => {
+    if (curr % 2 === 0 && arr[index + 1] % 2 === 0) {
+        acc += curr + "-";
+    } else {
+        acc += curr;
+    }
+    return acc;
+}
+
+console.log([...str].reduce(modify, ""));
 
 
 /**
